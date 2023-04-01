@@ -10,9 +10,6 @@ function App() {
 
   return (
     <div>
-      {/* TODO this is where the navbar type stuff will live, whereas everything in */}
-      {/* the Routes will be rendered in the same detail view window within this */}
-      {/* container */}
       <Link to={'/'} css={homeLink}>
           <Avatar
               src="/src/assets/me-photo.jpg"

@@ -10,10 +10,8 @@ interface CardProps {
 export const BlogPostCard = (props: CardProps) => {
     return (
         <Card variant="outlined" css={card}>
-            {/* <div css={cardInnards}> */}
-                <h3 css={title}>{props.blogPost.title}</h3>
-                <p css={title}>{props.blogPost.mdContent}</p>
-            {/* </div> */}
+            <h3 css={text}>{props.blogPost.title}</h3>
+            <p css={text}>{props.blogPost.mdContent}</p>
         </Card>
     );
 }
@@ -28,7 +26,7 @@ const cardInnards = css({
    justifyContent: 'flex-start',
 });
 
-const title = css({
+const text = css({
     margin: 'auto',
 });
 
