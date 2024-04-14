@@ -1,10 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const view = ref("");
+const view = ref("lang");
 
 function setView(s: string) {
-    console.log('setting view to', s);
     view.value = s;
 }
 </script>
@@ -18,10 +17,6 @@ function setView(s: string) {
                 <button :class="[ view ==='interest' ? 'selected' : 'green' ]" @click="setView('interest')">Interests</button>
             </nav>
         </header>
-
-        <template v-if="view === ''">
-            <h1>Select an area to learn more</h1>
-        </template>
 
         <template v-if="view === 'lang'">
             <h3>Rust</h3>
