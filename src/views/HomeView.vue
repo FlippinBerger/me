@@ -4,9 +4,11 @@
 <template>
     <main>
         <h1>Hello!</h1>
-        <h3>My name is Chris and I am a backend-leaning full stack engineer with ~6 years of experience in industries
-            ranging from office furniture to CRMs to Authenticity on the Internet. Below are some fun facts about me.
+        <h3 class="intro">My name is Chris and I am a backend-leaning full stack engineer with ~6 years of experience in industries
+            ranging from office furniture to CRMs to Authenticity on the Internet.
         </h3>
+
+        <h3>Here are some fun facts:</h3>
         <ul>
             <li>
                 <h3>I'm an eclectic trifecta of super nerd, outdoorsy adventurer, and obsessive competitor.</h3>
@@ -18,6 +20,9 @@
             <li>
                 <h3>My family consists of my beautiful and incredible wife, Audrey, who is a pediactric dentist, a very
                     needy kitty named Maya, and an incredibly energetic doggo named Annie.</h3>
+            </li>
+            <li>
+                <h3>I studied Computer Science at the University of Michigan, which is also where Audrey and I met. Go Blue!</h3>
             </li>
         </ul>
     </main>
@@ -31,15 +36,15 @@ h1 {
   top: -10px;
 }
 
+.intro {
+    padding: 0 0 16px 0;
+}
+
 h3 {
   font-size: 1.2rem;
 }
 
-ul {
-    padding: 24px 0 0 0;
-}
-
 li {
-    padding: 16px 0 0 0;
+    padding: 0 0 16px 0;
 }
 </style>
