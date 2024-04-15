@@ -10,13 +10,13 @@ function setView(s: string) {
 
 <template>
     <div class="technical">
-        <header>
+        <div class="header">
             <nav>
                 <button :class="[view === 'lang' ? 'selected' : 'green']" @click="setView('lang')">Programming Languages</button>
                 <button :class="[ view === 'tool' ? 'selected' : 'green' ]" @click="setView('tool')">Tools</button>
                 <button :class="[ view ==='interest' ? 'selected' : 'green' ]" @click="setView('interest')">Interests</button>
             </nav>
-        </header>
+        </div>
 
         <template v-if="view === 'lang'">
             <h1>Rust</h1>
@@ -75,7 +75,7 @@ h3 {
     padding: 0 0 16px 0;
 }
 
-header {
+.header {
     padding: 16px 0;
 }
 

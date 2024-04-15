@@ -8,7 +8,8 @@ import Home from './components/Home.vue'
         <!-- TOOD probs dont want an image here but maybe? -->
         <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
         <div class="img-wrapper">
-            <img src="./assets/main_pic.jpeg"></img>
+            <!-- <img src="./assets/main_pic.jpeg"></img> -->
+            <img src="./assets/coffee.jpeg"></img>
         </div>
 
         <div class="wrapper">
@@ -17,6 +18,7 @@ import Home from './components/Home.vue'
                 <RouterLink to="/">Home</RouterLink>
                 <RouterLink to="/technical">Technical Skills</RouterLink>
                 <RouterLink to="/hobbies">Hobbies</RouterLink>
+                <RouterLink to='/portfolio'>Portfolio</RouterLink>
             </nav>
         </div>
     </header>
@@ -28,6 +30,7 @@ import Home from './components/Home.vue'
 header {
     line-height: 1.5;
     max-height: 100vh;
+    position: relative;
 }
 
 .logo {
