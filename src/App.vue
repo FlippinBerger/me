@@ -15,10 +15,9 @@ import Home from './components/Home.vue'
         <div class="wrapper">
             <Home />
             <nav>
-                <RouterLink to="/">Home</RouterLink>
+                <RouterLink to="/about">Home</RouterLink>
                 <RouterLink to="/technical">Technical Skills</RouterLink>
                 <RouterLink to="/hobbies">Hobbies</RouterLink>
-                <RouterLink to='/portfolio'>Portfolio</RouterLink>
             </nav>
         </div>
     </header>
