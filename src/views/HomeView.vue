@@ -8,7 +8,8 @@
             ranging from office furniture to CRMs to Authenticity on the Internet.
         </h3>
 
-        <h3>Here are some fun facts:</h3>
+        <h1>Some quirks:</h1>
+        <!-- TODO move this list over and maybe remove the bullets -->
         <ul>
             <li>
                 <h3>I'm an eclectic trifecta of super nerd, outdoorsy adventurer, and obsessive competitor.</h3>
@@ -37,14 +38,20 @@ h1 {
 }
 
 .intro {
-    padding: 0 0 16px 0;
+    padding: 0 0 32px 0;
 }
 
 h3 {
   font-size: 1.2rem;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 li {
     padding: 0 0 16px 0;
+    text-indent: 0;
 }
 </style>

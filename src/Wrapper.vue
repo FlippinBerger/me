@@ -10,7 +10,7 @@ const location = useRoute();
     <RouterView />
 </template>
 
-<style>
+<style scoped>
 /* TODO add something else for small screens */
 .link {
     position: absolute;
