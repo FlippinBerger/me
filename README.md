@@ -37,3 +37,5 @@ npm run build
 ```sh
 npm run lint
 ```
+
+push to 'live' branch to deploy
