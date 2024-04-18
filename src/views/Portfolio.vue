@@ -1,26 +1,44 @@
+<script setup>
+    import {ref} from 'vue';
+    import Personal from '../components/projects/Personal.vue';
+    import OpenSource from '../components/projects/OpenSource.vue';
+    const projects = ref('opensource');
+</script>
+
 <template>
     <div class='wrapper'>
-        <!-- attempt at a select box solution -->
-        <!-- <select class='green'> -->
-        <!--     <option value='personal'>Personal</option>  -->
-        <!--     <option value='open-source'>Open Source</option>  -->
-        <!-- </select> -->
-        <nav class='navbar'>
-            <!-- <button>Open Source</button> -->
-            <!-- <button>Personal</button> -->
-            <h2>Open Source</h2>
-            <h2>Personal</h2>
-        </nav>
+        <div class='navbar'>
+            <h2 class='green nav-item' :class="{selected: projects === 'opensource'}"
+                @click="() => projects = 'opensource'">
+                Open Source</h2>
+            <h2 class='green nav-item' :class="{selected: projects === 'personal'}"
+                @click="() => projects = 'personal'">
+                Personal
+            </h2>
+        </div>
 
+        <OpenSource v-if="projects === 'opensource'" />
+        <Personal v-else-if="projects === 'personal'" />
     </div>
 </template>
 
 <style scoped>
 .navbar {
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    gap: 2;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: hsla(160, 100%, 37%, .2);
+}
+
+.selected {
+    text-decoration: underline;
 }
 
 select {
@@ -31,7 +49,10 @@ select {
 }
 
 .wrapper {
-    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .types {
