@@ -65,6 +65,13 @@ function setView(s: string) {
 </template>
 
 <style scoped>
+h1 {
+  font-weight: 500;
+  font-size: 2.6rem;
+  position: relative;
+  align-self: flex-start;
+}
+
 button {
     border: 0;
     font-size: 22px;
