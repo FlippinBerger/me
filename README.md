@@ -38,4 +38,4 @@ npm run build
 npm run lint
 ```
 
-push to 'live' branch to deploy this site
+push to 'live' branch to deploy this site 
