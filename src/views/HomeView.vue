@@ -2,9 +2,9 @@
 </script>
 
 <template>
-    <main>
+    <main class='body'>
         <h1>Hello!</h1>
-        <h3 class="intro">My name is Chris and I am a backend-leaning full stack engineer with ~6 years of experience in industries
+        <h3 class="intro">My name is Chris and I am a backend-leaning full stack engineer from Michigan with ~6 years of experience in industries
             ranging from office furniture to CRMs to Authenticity on the Internet.
         </h3>
 
@@ -35,6 +35,10 @@ h1 {
   font-size: 2.6rem;
   position: relative;
   top: -10px;
+}
+
+.body {
+    margin-top: 64px;
 }
 
 .intro {
