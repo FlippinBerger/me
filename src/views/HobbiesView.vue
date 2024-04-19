@@ -8,6 +8,7 @@
           <li><h3>I also have a nature photography page and we're big bird nerds. Can't go anywhere without the camera or a pair of binos just in case there's a new lifer out there!</h3></li>
           <li><h3>For my nerdy ventures I play video games (mostly League of Legends and random indie hits) and read Fantasy and Sci-Fi.
                   Some of my favorite authors are Becky Chambers (don't sleep on the Wayfarer series), Brandon Sanderson, and Robin Hobb.</h3></li>
+          <li><h3>I'm also currently attempting to teach myself electric guitar to the point where I can consider myself a shredder.</h3></li>
       </ul>
   </div>
 </template>
