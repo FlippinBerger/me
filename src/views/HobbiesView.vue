@@ -15,7 +15,7 @@
 
 <style>
 .hobbies {
-    margin-top: 80px;
+    margin: 32px 32px 0 32px;
 }
 
 h1 {
@@ -39,12 +39,13 @@ li {
     text-indent: 0;
 }
 
-/* @media (min-width: 1024px) { */
-/*   .hobbies { */
-/*     min-height: 100vh; */
-/*     display: flex; */
-/*     flex-direction: column; */
-/*     align-items: center; */
-/*   } */
-/* } */
+@media (min-width: 1024px) {
+  .hobbies {
+    /* min-height: 100vh; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    padding: 40px 0;
+  }
+}
 </style>

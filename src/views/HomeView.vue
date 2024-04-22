@@ -9,7 +9,6 @@
         </h3>
 
         <h1>Some quirks:</h1>
-        <!-- TODO move this list over and maybe remove the bullets -->
         <ul>
             <li>
                 <h3>I'm an eclectic trifecta of super nerd, outdoorsy adventurer, and obsessive competitor.</h3>
@@ -38,7 +37,13 @@ h1 {
 }
 
 .body {
-    margin-top: 64px;
+    margin: 32px 32px 0 32px;
+}
+
+@media (min-width: 1024px) {
+    .body {
+        margin-top: 64px;
+    }
 }
 
 .intro {

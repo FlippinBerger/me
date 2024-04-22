@@ -5,10 +5,7 @@ import Home from './components/Home.vue'
 
 <template>
     <header>
-        <!-- TOOD probs dont want an image here but maybe? -->
-        <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
         <div class="img-wrapper">
-            <!-- <img src="./assets/main_pic.jpeg"></img> -->
             <img src="./assets/coffee.jpeg"></img>
         </div>
 
@@ -33,6 +30,13 @@ header {
     margin-top: 64px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     display: block;
     margin: 0 auto 2rem;
@@ -52,7 +56,7 @@ img {
 
 nav {
     width: 100%;
-    font-size: 12px;
+    font-size: 24px;
     text-align: center;
     margin-top: 2rem;
 }
@@ -81,16 +85,7 @@ nav a:first-of-type {
         flex-direction: column;
         place-items: center;
         padding-right: calc(var(--section-gap) / 2);
-    }
-
-    .logo {
-        margin: 0 2rem 0 0;
-    }
-
-    header .wrapper {
-        display: flex;
-        place-items: flex-start;
-        flex-wrap: wrap;
+        /* margin-top: -16px; */
     }
 
     nav {

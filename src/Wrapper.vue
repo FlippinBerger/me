@@ -5,47 +5,64 @@ const location = useRoute();
 </script>
 
 <template>
-    <RouterLink v-if="location.path === '/portfolio'" class='link' to='/'>About Me</RouterLink>
-    <RouterLink v-else class='link' to='/portfolio'>Portfolio</RouterLink>
-    <RouterView />
-    <div class='footer'>
-        <a href='mailto:flippinberger@gmail.com'>
-            <img src='./assets/email.svg' />
-        </a>
-        <a target='_blank' href='https://github.com/flippinberger'>
-            <img src='./assets/github.svg' />
-        </a>
-        <a target='_blank'
-            href='https://www.instagram.com/critters_with_chris?igsh=MWxlaHFmZDltaHlsdA%3D%3D&utm_source=qr'>
-            <img src='./assets/insta.svg' />
-        </a>
+    <div class='header'>
+        <!-- <div class='socials'> -->
+            <a href='mailto:flippinberger@gmail.com'>
+                <img src='./assets/email.svg' />
+            </a>
+            <a target='_blank' href='https://github.com/flippinberger'>
+                <img src='./assets/github.svg' />
+            </a>
+            <a target='_blank'
+                href='https://www.instagram.com/critters_with_chris?igsh=MWxlaHFmZDltaHlsdA%3D%3D&utm_source=qr'>
+                <img src='./assets/insta.svg' />
+            </a>
+        <!-- </div> -->
+
+        <RouterLink v-if="location.path === '/portfolio'" class='link' to='/'>About Me</RouterLink>
+        <RouterLink v-else class='link' to='/portfolio'>Portfolio</RouterLink>
+
     </div>
+    <RouterView />
+
+
 </template>
 
 <style scoped>
 /* TODO add something else for small screens */
-.link {
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
     z-index: 10;
-    top: 16px;
+    top: 8px;
     right: 24px;
+    background-color: hsla(160, 100%, 37%, .7);
+    border-radius: 8px;
+    padding: 4px;
+}
+@media (min-width: 1024px) {
+    .header {
+        width: 20%;
+    }
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
 }
 
 img {
     height: 32px;
     width: 32px;
+    margin-top: 6px;
+    color: white;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    z-index: 10;
-    bottom: 16px;
-    left: 24px;
-    background-color: green;
-    width: 10%;
-    border-radius: 8px;
-  background-color: hsla(160, 100%, 37%, .7);
-}
 </style>

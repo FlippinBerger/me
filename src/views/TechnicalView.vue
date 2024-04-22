@@ -107,6 +107,10 @@ nav button:first-of-type {
   border: 0;
 }
 
+.technical {
+    margin: 16px 32px;
+}
+
 @media (min-width: 1024px) {
     .technical {
         min-height: 100vh;
@@ -114,6 +118,7 @@ nav button:first-of-type {
         flex-direction: column;
         gap: 4px;
         align-items: center;
+        margin: 32px 0;
     }
 }
 </style>
