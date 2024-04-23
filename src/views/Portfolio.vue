@@ -53,6 +53,14 @@ select {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-top: 64px;
+}
+
+
+@media (min-width: 1024px) {
+    .wrapper {
+        margin-top: 32px;
+    }
 }
 
 .types {
